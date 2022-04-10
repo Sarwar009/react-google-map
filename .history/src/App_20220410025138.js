@@ -2,7 +2,6 @@
 import './App.css';
 import {GoogleMap, withScriptjs, withGoogleMap} from 'react-google-maps'
 
-
 function App() {
 
   const Map = () => {
@@ -16,7 +15,6 @@ function App() {
     )
   }
 
-  
   const Wrapped = withScriptjs(withGoogleMap(Map));
 
   return (

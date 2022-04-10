@@ -1,7 +1,7 @@
 
 import './App.css';
 import {GoogleMap, withScriptjs, withGoogleMap} from 'react-google-maps'
-
+import { useEffect } from 'react';
 
 function App() {
 
@@ -16,8 +16,7 @@ function App() {
     )
   }
 
-  
-  const Wrapped = withScriptjs(withGoogleMap(Map));
+  useEffect(())
 
   return (
     <div style={{width: '100vw', height: '100vh'}}>
